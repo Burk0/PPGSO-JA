@@ -6,11 +6,28 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <chrono>
 
-//using namespace glm;
+const GLchar* vertexSource =
+        "#version 150 core\n"
+                "in vec2 position;"
+                "in vec3 color;"
+                "out vec3 Color;"
+                "void main()"
+                "{"
+                "    Color = color;"
+                "    gl_Position = vec4(position, 0.0, 1.0);"
+                "}";
+const GLchar* fragmentSource =
+        "#version 150 core\n"
+                "in vec3 Color;"
+                "out vec4 outColor;"
+                "void main()"
+                "{"
+                "    outColor = vec4(Color, 1.0);"
+                "}";
 
 GLuint LoadShaders(const char * vertex_file_path,const char * fragment_file_path){
-//    printf("dosiel som sem");
     // Create the shaders
     GLuint VertexShaderID = glCreateShader(GL_VERTEX_SHADER);
     GLuint FragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
@@ -106,9 +123,9 @@ GLuint LoadShaders(const char * vertex_file_path,const char * fragment_file_path
 int main()
 {
     static const GLfloat g_vertex_buffer_data[] = {
-            -1.0f, -1.0f, 0.0f,
-            1.0f, -1.0f, 0.0f,
-            0.0f,  1.0f, 0.0f,
+            0.0f,  0.5f, 1.0f, 0.0f, 0.0f, // Vertex 1: Red
+            0.5f, -0.5f, 0.0f, 1.0f, 0.0f, // Vertex 2: Green
+            -0.5f, -0.5f, 0.0f, 0.0f, 1.0f  // Vertex 3: Blue
     };
 
     GLuint vertexbuffer;
@@ -153,8 +170,20 @@ int main()
 // Give our vertices to OpenGL.
     glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
 
+
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
     GLuint programID = LoadShaders( "SimpleVertexShader.vertexshader", "SimpleFragmentShader.fragmentshader" );
+
+    GLint posAttrib = glGetAttribLocation(programID, "position");
+    glEnableVertexAttribArray(posAttrib);
+    glVertexAttribPointer(posAttrib, 2, GL_FLOAT, GL_FALSE,
+                          5*sizeof(float), 0);
+
+    GLint colAttrib = glGetAttribLocation(programID, "color");
+    glEnableVertexAttribArray(colAttrib);
+    glVertexAttribPointer(colAttrib, 3, GL_FLOAT, GL_FALSE,
+                          5*sizeof(float), (void*)(2*sizeof(float)));
+
     do{
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glUseProgram(programID);
@@ -176,6 +205,7 @@ int main()
         // Swap buffers
         glfwSwapBuffers(window);
         glfwPollEvents();
+
 
     } // Check if the ESC key was pressed or the window was closed
     while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS &&

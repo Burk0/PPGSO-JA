@@ -87,14 +87,24 @@ add_executable(u1 ${U1_SRC})
 target_link_libraries(u1 libppgso)
 install (TARGETS u1 DESTINATION .)
 
+# u2
+set(U2_SRC src/u2/u2.cpp)
+generate_shaders(GL_TEXTURE_SHADERS
+        src/u2/u2_frag.glsl
+        src/u2/u2_vert.glsl)
+add_executable(u2 ${U2_SRC})
+target_link_libraries(u2 libppgso)
+install (TARGETS u2 DESTINATION .)
+
 # Triangle
-set(TRIANGLE_SRC src/Triangle/Triangle.cpp)
+set(TRIANGLE_SRC src/Triangle/Triangle.cpp src/u2/u2.cpp)
 generate_shaders(TRIANGLE_SHADERS
         src/Triangle/Triangle_frag.glsl
         src/Triangle/Triangle_vert.glsl)
 add_executable(Triangle ${TRIANGLE_SRC})
 target_link_libraries(Triangle libppgso)
 install (TARGETS Triangle DESTINATION .)
+
 
 
 #

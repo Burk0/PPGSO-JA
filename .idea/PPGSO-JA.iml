@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/lib/tiny_obj_loader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/shader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/mesh.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/u2/u2.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/u1/u1.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Triangle/Triangle.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
