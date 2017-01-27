@@ -2,17 +2,42 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/block.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/space.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/finishBlock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/lavaBlock.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/lavaBlock.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/object.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/scene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/gl_scene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/object.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/player.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/mapka.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/space.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/camera.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/kuzel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/finishBlock.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/block.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/scene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/kuzel.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/player.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/mapka.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/gl_scene/camera.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/u7/u7.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/u6/u6.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/u5/u5.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/shader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lib/mesh.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/mesh.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/tiny_obj_loader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/texture.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/texture.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/lib/tiny_obj_loader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib/shader.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/lib/mesh.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lib/tiny_obj_loader.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/u3/u3.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/u2/u2.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/u1/u1.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Triangle/Triangle.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/u4/u4.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake/shaders.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake/FindGLFW3.cmake" isTestSource="false" />
@@ -26,20 +51,20 @@
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/local/include" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Release0" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/MinSizeRel0" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Debug0" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/RelWithDebInfo0" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Release" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Debug" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/RelWithDebInfo" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/MinSizeRel" />
         </CLASSES>
         <SOURCES>
           <root url="file:///usr/include" />
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/local/include" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Release0" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/MinSizeRel0" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Debug0" />
-          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/RelWithDebInfo0" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Release" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/Debug" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/RelWithDebInfo" />
+          <root url="file://$USER_HOME$/.CLion2016.2/system/cmake/generated/PPGSO-JA-be0f9758/be0f9758/MinSizeRel" />
         </SOURCES>
       </library>
     </orderEntry>

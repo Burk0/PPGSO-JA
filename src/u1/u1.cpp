@@ -14,8 +14,8 @@
 #include "shader.h"
 #include "mesh.h"
 
-#include "gl_texture_vert.h"
-#include "gl_texture_frag.h"
+//#include "u1_vert.h"
+//#include "u1_frag.h"
 
 // Size of the framebuffer
 const unsigned int SIZE = 512;
@@ -81,7 +81,7 @@ void createWindow()
         exit(1);
     }
     // Load shaders
-    auto program = ShaderPtr(new Shader{gl_texture_vert, gl_texture_frag});
+    auto program = ShaderPtr(new Shader{u1_vert, u2_frag});
     program->Use();
 
     auto quad = Mesh{program, "quad.obj"};
